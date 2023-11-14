@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+
+/*стили для application.html.erb*/
+
+.btn-primary {
+    margin-top: 10px;
+}
+
+.my_form {
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+div#view_range {
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+    padding: 0.375rem 0.75rem;
+}

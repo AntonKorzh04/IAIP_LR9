@@ -1,0 +1,21 @@
+<h1>LuckyNumbers view</h1>
+<!-- <%= link_to '<button type="button">Back</button>'.html_safe, "/lucky_numbers/input" %> -->
+<div class="col-4">
+    <div class="my_form">
+        <div id="view_range">Диапазон поиска счастливых чисел: <%= params[:numbers_count] %></div>
+        <%= button_to "Назад", { :action => "input" }, :method => :get, :class => "btn btn-primary" %>
+    </div>
+
+    <table id="result_table" class="table">
+        <tr>
+            <th>Индекс</th>
+            <th>Число</th>
+        </tr>
+        <% @result.each_index do |i| %>
+            <tr>
+                <td><%= i %></td>
+                <td><%= @result[i] %></td>
+            </tr>
+        <% end %>   
+    </table>
+</div>

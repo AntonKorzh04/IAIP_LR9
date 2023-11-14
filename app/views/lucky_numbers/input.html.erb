@@ -1,0 +1,11 @@
+<h1>LuckyNumbers calculator with AJAX</h1>
+<div class="col-4">
+    <%= form_tag("/lucky_numbers/view", {method: "get", class: "my_form", id: "my_form"}) do %>
+        <div class="form-group">
+            <%= text_field_tag (:numbers_count),"", class: "form-control", placeholder: "Диапазон поиска счастливых чисел" %>
+        </div>
+        <%= submit_tag('Увидеть результат',  :class => "btn btn-primary") %>
+    <% end %>
+
+  <div id="result" class="my_form"></div>
+</div> 

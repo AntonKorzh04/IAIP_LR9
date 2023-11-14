@@ -2,6 +2,11 @@ source "https://rubygems.org"
 
 ruby "3.2.2"
 
+gem "rake", "= 13.1.0"
+
+gem 'rails-controller-testing'
+gem 'jquery-rails'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.1"
 

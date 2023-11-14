@@ -1,0 +1,2 @@
+module LuckyNumbersHelper
+end
