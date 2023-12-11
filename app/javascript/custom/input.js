@@ -45,8 +45,6 @@ function makeAjaxRequest() {
 
           // блок, в котором выводится таблица
           var resultDiv = document.getElementById("result");
-          // resultDiv.innerHTML = ""; // удаляем предыдущий вывод
-          // resultDiv.style.display = ""; // включаем отображение
           
           // создание таблицы вывода, присваивание аттрибутов
           var resultTable = document.createElement("table");
